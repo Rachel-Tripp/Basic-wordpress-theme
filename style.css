@@ -45,6 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
+	color: #666666;
 	font-family: serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
