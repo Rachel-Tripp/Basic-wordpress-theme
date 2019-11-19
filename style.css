@@ -848,3 +848,8 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/*============= author styles =============*/
+h1 {
+	font-family: georgia, serif;
+}
