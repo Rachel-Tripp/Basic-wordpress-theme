@@ -850,9 +850,45 @@ object {
 }
 
 /*============= author styles =============*/
-h1 {
-	font-family: georgia, serif;
+body {
+	font-family: gill-sans, sans-serif;
+	color: #122448;
+	background: #f3e8ce;
+	font-size: 1.2rem;
+	padding: 1rem;
+	margin: 1rem 0;
+}
+ul {
+	list-style-type: none;
 }
 a {
-	color: red;
+	color: #1b57af;
+	text-decoration: none;
+}
+a:visited {
+	color: #122448;
+}
+a:hover {
+	color: #c89c2d;
+	transition-duration: 1s;
+}
+a:active {
+	color: #f4c036;
+}
+h1 {
+	font-family: serif;
+	font-size: 3rem;
+	padding: 1rem;
+	margin: 1rem;
+	color: #626275;
+}
+h2 {
+	font-family: serif;
+	font-size: 2rem;
+	padding: 1rem;
+	margin: 1rem;
+	color: #626275;
+}
+.site-info {
+	margin: 0 auto;
 }
