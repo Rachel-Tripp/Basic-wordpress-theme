@@ -855,12 +855,17 @@ object {
 	--heading-font: source-serif-variable, serif;
 	--body-font: gill-sans, sans-serif;
 	/*============= text size =============*/
+	font-size: calc(1.25em+0.5*((100vw-37.5em)/60));
 	--body-text-size: 1.2rem;
 	--h1-size: 3rem;
 	--h2-size: 2rem;
 	--h3-size: 1;
 	/*============= colors =============*/
 	--background: #f3e8ce;
+	--menu-background: #626275;
+	--menu-item-background: #f3e8ce;
+	--menu-shadow: #122448;
+	--menu-color: #626275;
 	--heading-color: #626275;
 	--body-color: #122448;
 	--link-initial: #1b57af;
@@ -871,13 +876,26 @@ object {
 	--basic-padding: 1rem;
 	--basic-margin: 1rem;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+}
+*,
+    ::before,
+    ::after {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
 body {
 	font-family: var(--body-font);
 	color: var(--body-color);
 	background: var(--background);
 	font-size: var(--body-text-size);
-	padding: var(--basic-padding);
-	margin: var(--basic-margin);
+	padding:0;
+	margin:0;
 }
 ul {
 	list-style-type: none;
@@ -910,3 +928,53 @@ h2 {
 	margin: var(--basic-margin);
 	color: var(heading-color);
 }
+.nav-menu {
+	background: var(--menu-background);
+	padding: 1rem;
+	margin: 0;
+}
+.nav-menu a {
+	background: var(--menu-item-background);
+	color: var(--menu-color);
+	padding: 1em;
+	margin: 1em 0.5em;
+	border-radius: 2em;
+	box-shadow: 5px 6px 3px var(--menu-shadow);
+	width: 10em;
+	text-align: center;
+}
+
+/*============= media queries =============*/
+@media screen and (min-width:37.5em) {
+    :root {
+        font-size: 0.8rem;
+    }
+	a {
+		color: pink;
+	}
+}
+
+@media screen and (min-width:56em) {
+    :root {
+        font-size:1.3rem;
+    }
+	a {
+		color: green;
+	}
+}
+/* edit colors for dark mode
+@media (prefer-color-scheme: dark) {
+	:root {
+	--background: #f3e8ce;
+	--menu-background: #626275;
+	--menu-item-background: #f3e8ce;
+	--menu-shadow: #122448;
+	--menu-color: #626275;
+	--heading-color: #626275;
+	--body-color: #122448;
+	--link-initial: #1b57af;
+	--link-hover: #c89c2d;
+	--link-active: #f4c036;
+	--link-visited: #122448;
+	}
+}*/
