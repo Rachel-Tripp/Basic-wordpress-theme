@@ -927,7 +927,7 @@ h2 {
 	font-size: var(--h2-size);
 	padding: var(--basic-padding);
 	margin: var(--basic-margin);
-	color: var(heading-color);
+	color: var(--heading-color);
 }
 .nav-menu {
 	background: var(--menu-background);
