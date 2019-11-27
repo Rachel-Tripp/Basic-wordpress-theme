@@ -866,12 +866,16 @@ object {
 	--menu-item-background: #f3e8ce;
 	--menu-shadow: #122448;
 	--menu-color: #626275;
-	--heading-color: #626275;
+	--heading-color: green;
 	--body-color: #122448;
 	--link-initial: #1b57af;
 	--link-hover: #c89c2d;
 	--link-active: #f4c036;
-	--link-visited: #122448;
+	--footer-background: #122448;
+	--footer-color: #626275;
+	--footer-link-color: #c89c2d;
+	--footer-link-hover-color: #f4c036;
+	--footer-link-active-color: #626275;
 	/*============= Layout =============*/
 	--basic-padding: 1rem;
 	--basic-margin: 1rem;
@@ -904,12 +908,9 @@ a {
 	color: var(--link-initial);
 	text-decoration: none;
 }
-a:visited {
-	color: var(link-visited);
-}
 a:hover {
 	color: var(--link-hover);
-	transition-duration: 1s;
+	transition-duration: 0.5s;
 }
 a:active {
 	color: var(--link-active);
@@ -937,20 +938,45 @@ h2 {
 	background: var(--menu-item-background);
 	color: var(--menu-color);
 	padding: 1em;
-	margin: 1em 0.5em;
+	margin: 1em auto;
 	border-radius: 2em;
 	box-shadow: 5px 6px 3px var(--menu-shadow);
 	width: 10em;
 	text-align: center;
 }
-
+.nav-menu a:hover {
+	background: var(--menu-color);
+	color: var(--background);
+}
+.nav-menu a:active {
+	box-shadow: 1px 1px 3px var(--menu-shadow);
+	color: var(--body-color)
+}
+footer {
+	background: var(--footer-background);
+	color: var(--footer-color);
+}
+.site-info {
+	padding: var(--basic-padding);
+	margin: var(--basic-margin);
+	text-align: center;
+}
+footer a {
+	color: var(--footer-link-color);
+}
+footer a:hover {
+	color: var(--footer-link-hover-color);
+}
+footer a:active {
+	color: var(--footer-link-active-color);
+}
 /*============= media queries =============*/
 @media screen and (min-width:37.5em) {
     :root {
         font-size: 0.8rem;
     }
-	a {
-		color: pink;
+	.main-navigation ul {
+		justify-content:space-between;
 	}
 }
 
@@ -958,23 +984,4 @@ h2 {
     :root {
         font-size:1.3rem;
     }
-	a {
-		color: green;
-	}
 }
-/* edit colors for dark mode
-@media (prefer-color-scheme: dark) {
-	:root {
-	--background: #f3e8ce;
-	--menu-background: #626275;
-	--menu-item-background: #f3e8ce;
-	--menu-shadow: #122448;
-	--menu-color: #626275;
-	--heading-color: #626275;
-	--body-color: #122448;
-	--link-initial: #1b57af;
-	--link-hover: #c89c2d;
-	--link-active: #f4c036;
-	--link-visited: #122448;
-	}
-}*/

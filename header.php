@@ -16,8 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
-	<meta name="description" content="For over 25 years, Top Quality Painting has provided expert service in commercial and residential painting. Our team of skilled painters can take on any job and give you results that make your property shine.">
+	<link rel="stylesheet" href="https://use.typekit.net/goa5oqo.css">
+	<meta name="description" content="Rachel Tripp's Portfolio site">
 	<?php wp_head(); ?>
 </head>
 
