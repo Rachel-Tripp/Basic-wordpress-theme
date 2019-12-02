@@ -866,7 +866,7 @@ object {
 	--menu-item-background: #f3e8ce;
 	--menu-shadow: #122448;
 	--menu-color: #626275;
-	--heading-color: green;
+	--heading-color: #626275;
 	--body-color: #122448;
 	--link-initial: #1b57af;
 	--link-hover: #c89c2d;
@@ -877,8 +877,8 @@ object {
 	--footer-link-hover-color: #f4c036;
 	--footer-link-active-color: #626275;
 	/*============= Layout =============*/
-	--basic-padding: 1rem;
-	--basic-margin: 1rem;
+	--basic-padding: 1em;
+	--basic-margin: 1em;
 }
 html, body {
     margin: 0;
@@ -919,30 +919,31 @@ h1 {
 	font-family: var(--heading-font);
 	font-size: var(--h1-size);
 	padding: var(--basic-padding);
-	margin: var(--basic-margin);
+	margin: 0;
 	color: var(--heading-color);
 }
 h2 {
 	font-family: var(--heading-font);
 	font-size: var(--h2-size);
-	padding: var(--basic-padding);
-	margin: var(--basic-margin);
+	padding: 0;
+	margin: 0;
 	color: var(--heading-color);
 }
 .nav-menu {
 	background: var(--menu-background);
-	padding: 1rem;
+	padding: 0.5em 0em;
 	margin: 0;
 }
 .nav-menu a {
 	background: var(--menu-item-background);
 	color: var(--menu-color);
-	padding: 1em;
-	margin: 1em auto;
+	padding: 0.8em;
+	margin: 0.7em auto;
 	border-radius: 2em;
 	box-shadow: 5px 6px 3px var(--menu-shadow);
-	width: 10em;
+	width: 90%;
 	text-align: center;
+	font-size: 1.4rem;
 }
 .nav-menu a:hover {
 	background: var(--menu-color);
@@ -952,14 +953,40 @@ h2 {
 	box-shadow: 1px 1px 3px var(--menu-shadow);
 	color: var(--body-color)
 }
+.entry-title {
+	text-align: center;
+	padding: 0.5em;
+	margin: 0em;
+}
+.entry-content {
+	padding: 1.5em;
+	margin:1em 0em;
+}
+.site-footer {
+	padding: 0.5em;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.secondary {
+	grid-row: 1;
+	text-align: center;
+	margin: 1em;
+	padding: 0;
+}
+.widget .widget_search {
+	margin: 0;
+}
 footer {
 	background: var(--footer-background);
 	color: var(--footer-color);
 }
 .site-info {
-	padding: var(--basic-padding);
-	margin: var(--basic-margin);
+	grid-row: 2;
+	padding: 0.7em 0.2em 1em 0.2em;
+	margin: 0;
 	text-align: center;
+	font-size: 0.9rem;
 }
 footer a {
 	color: var(--footer-link-color);
