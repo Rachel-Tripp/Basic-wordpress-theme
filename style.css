@@ -929,6 +929,9 @@ h2 {
 	margin: 0;
 	color: var(--heading-color);
 }
+.main-navigation ul {
+	padding: 0.5em;
+}
 .nav-menu {
 	background: var(--menu-background);
 	padding: 0.5em 0em;
@@ -971,7 +974,7 @@ h2 {
 .secondary {
 	grid-row: 1;
 	text-align: center;
-	margin: 1em;
+	margin: 1em 1em 0em 1em;
 	padding: 0;
 }
 .widget .widget_search {
@@ -1000,10 +1003,13 @@ footer a:active {
 /*============= media queries =============*/
 @media screen and (min-width:37.5em) {
     :root {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
-	.main-navigation ul {
-		justify-content:space-between;
+	.nav-menu {
+		padding: 1em;
+	}
+	.nav-menu a {
+		width: 7em;
 	}
 }
 
@@ -1011,4 +1017,7 @@ footer a:active {
     :root {
         font-size:1.3rem;
     }
+	.nav-menu a {
+		width: 9em;
+	}
 }
