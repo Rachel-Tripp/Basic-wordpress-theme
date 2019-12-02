@@ -866,7 +866,8 @@ object {
 	--menu-item-background: #f3e8ce;
 	--menu-shadow: #122448;
 	--menu-color: #626275;
-	--heading-color: #626275;
+	--hover-menu-color: #122448;
+	--heading-color: #122448;
 	--body-color: #122448;
 	--link-initial: #1b57af;
 	--link-hover: #c89c2d;
@@ -876,9 +877,6 @@ object {
 	--footer-link-color: #c89c2d;
 	--footer-link-hover-color: #f4c036;
 	--footer-link-active-color: #626275;
-	/*============= Layout =============*/
-	--basic-padding: 1em;
-	--basic-margin: 1em;
 }
 html, body {
     margin: 0;
@@ -948,14 +946,6 @@ h2 {
 	text-align: center;
 	font-size: 1.4rem;
 }
-.nav-menu a:hover {
-	background: var(--menu-color);
-	color: var(--background);
-}
-.nav-menu a:active {
-	box-shadow: 1px 1px 3px var(--menu-shadow);
-	color: var(--body-color)
-}
 .page-title, .entry-title {
 	text-align: center;
 	padding: 0.5em;
@@ -1011,6 +1001,11 @@ footer a:active {
 	.nav-menu a {
 		width: 7em;
 	}
+	.nav-menu {
+		background: var(--menu-background);
+		padding: 0.5em 0em;
+		margin: 0;
+	}
 }
 
 @media screen and (min-width:56em) {
@@ -1019,5 +1014,34 @@ footer a:active {
     }
 	.nav-menu a {
 		width: 9em;
+	}
+	.page-content p, .entry-content{
+		padding: 1.5em 8em;
+		margin:1em 0em;
+	}
+	.nav-menu {
+		background: var(--background);
+		padding: 0;
+		margin: 0;
+	}
+	.menu-main-nav-container {
+		padding: 2em 1em;
+	}
+	.nav-menu a {
+		color: var(--menu-color);
+		padding: 0;
+		margin: 0;
+		border-radius: 0;
+		box-shadow: none;
+		text-align: center;
+		font-size: 1.4rem;
+	}
+	.nav-menu a:hover {
+	background: var(--background);
+	color: var(--hover-menu-color);
+}
+	.nav-menu a:active {
+		box-shadow: none;
+		color: var(--body-color)
 	}
 }
