@@ -956,12 +956,12 @@ h2 {
 	box-shadow: 1px 1px 3px var(--menu-shadow);
 	color: var(--body-color)
 }
-.page-title {
+.page-title, .entry-title {
 	text-align: center;
 	padding: 0.5em;
 	margin: 0em;
 }
-.page-content p{
+.page-content p, .entry-content{
 	padding: 1.5em;
 	margin:1em 0em;
 }
