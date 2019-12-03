@@ -566,7 +566,9 @@ a:hover, a:active {
 		display: none;
 	}
 }
-
+.main-navigation ul {
+	display: grid;
+}
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -902,7 +904,7 @@ a {
 	color: var(--link-initial);
 	text-decoration: none;
 }
-a:hover {
+a:hover, a:focus {
 	color: var(--link-hover);
 	transition-duration: 0.5s;
 }
@@ -962,7 +964,7 @@ h2 {
 	text-align: center;
 	font-size: 1.4rem;
 }
-	.nav-menu a:hover {
+	.nav-menu a:hover, a:focus {
 	background: var(--background);
 	color: var(--hover-menu-color);
 }
@@ -1031,23 +1033,36 @@ footer a:active {
     :root {
         font-size: 1rem;
     }
-	.nav-menu a {
-		width: 5em;
-	}
 	.nav-menu {
 		background: var(--menu-background);
-		padding: 2em 1em 1em 5em;
+		padding: 1.5em 0.5em 1em 0.5em;
 		margin: 1em;
 	}
-		.nav-menu a {
+	.nav-menu a {
 		padding: 0;
-		margin: 0;
+		margin: 0 auto;
+	}
+	.menu-item-27 {
+		grid-column: 1;
+	}
+	.menu-item-23 {
+		grid-column: 2;
+	}
+	.menu-item-24 {
+		grid-column: 3;
+	}
+	.menu-item-34 {
+		grid-column: 4;
 	}
 	.menu-item-82 {
 		border-bottom:none;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		grid-column: 5;
 	}
-	.caption {
-	padding: 0 9em;
+	.menu-item-82 {
+		margin: 0;
 	}
 	.caption-body {
 		font-weight: normal;
@@ -1070,17 +1085,11 @@ footer a:active {
 	}
 	.nav-menu {
 		background: var(--background);
-		padding: 0;
+		padding: 1em;
 		margin: 0;
 	}
 	.menu-main-nav-container {
 		padding: 2em 1em;
-	}
-	.nav-menu a {
-		color: var(--menu-color);
-		padding: 0;
-		margin: 0;
-		text-align: center;
-		font-size: 1.4rem;
+		background: var(--background);
 	}
 }
