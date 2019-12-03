@@ -949,12 +949,6 @@ h2 {
 	padding: 0.5em 0em;
 	margin: 0;
 }
-.menu-item-82 {
-	padding-bottom: 1em;
-	width: 80%;
-	border-bottom: var(--menu-color) solid 3px;
-	margin: 0 auto;
-}
 .nav-menu a {
 	background: var(--menu-background);
 	color: var(--menu-color);
@@ -1055,14 +1049,7 @@ footer a:active {
 		grid-column: 4;
 	}
 	.menu-item-82 {
-		border-bottom:none;
-		width: 100%;
-		margin: 0;
-		padding: 0;
 		grid-column: 5;
-	}
-	.menu-item-82 {
-		margin: 0;
 	}
 	.caption-body {
 		font-weight: normal;
