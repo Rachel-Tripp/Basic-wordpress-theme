@@ -945,13 +945,16 @@ h2 {
 .main-navigation {
 	background: var(--menu-color);
 }
-.main-navigation ul {
-	padding: 0.5em;
-}
 .nav-menu {
 	background: var(--menu-background);
 	padding: 0.5em 0em;
 	margin: 0;
+}
+.menu-item-82 {
+	padding-bottom: 1em;
+	width: 80%;
+	border-bottom: var(--menu-color) solid 3px;
+	margin: 0 auto;
 }
 .nav-menu a {
 	background: var(--menu-background);
@@ -962,6 +965,14 @@ h2 {
 	text-align: center;
 	font-size: 1.4rem;
 }
+	.nav-menu a:hover {
+	background: var(--background);
+	color: var(--hover-menu-color);
+}
+	.nav-menu a:active {
+		box-shadow: none;
+		color: var(--menu-color)
+	}
 /*============= Body =============*/
 .page-title, .entry-title {
 	text-align: center;
@@ -971,6 +982,16 @@ h2 {
 .page-content p, .entry-content{
 	padding: 1.5em;
 	margin:1em 0em;
+}
+.caption {
+	padding: 0 1em;
+}
+.caption-body {
+	font-weight: normal;
+}
+.caption-body h3 {
+		font-size: 0.8rem;
+		margin: 0.5em 0;
 }
 /*============= Footer =============*/
 .site-footer {
@@ -1013,16 +1034,30 @@ footer a:active {
     :root {
         font-size: 1rem;
     }
-	.nav-menu {
-		padding: 1em;
-	}
 	.nav-menu a {
-		width: 7em;
+		width: 5em;
 	}
 	.nav-menu {
 		background: var(--menu-background);
-		padding: 0.5em 0em;
+		padding: 2em 1em 1em 5em;
+		margin: 1em;
+	}
+		.nav-menu a {
+		padding: 0;
 		margin: 0;
+	}
+	.menu-item-82 {
+		border-bottom:none;
+	}
+	.caption {
+	padding: 0 9em;
+	}
+	.caption-body {
+		font-weight: normal;
+	}
+	.caption-body h3 {
+		font-size: 0.9rem;
+		margin: 1em 0;
 	}
 }
 @media screen and (min-width:56em) {
@@ -1030,7 +1065,7 @@ footer a:active {
         font-size:1.3rem;
     }
 	.nav-menu a {
-		width: 9em;
+		width: 5.5em;
 	}
 	.page-content p, .entry-content{
 		padding: 1.5em 8em;
@@ -1048,17 +1083,7 @@ footer a:active {
 		color: var(--menu-color);
 		padding: 0;
 		margin: 0;
-		border-radius: 0;
-		box-shadow: none;
 		text-align: center;
 		font-size: 1.4rem;
-	}
-	.nav-menu a:hover {
-	background: var(--background);
-	color: var(--hover-menu-color);
-}
-	.nav-menu a:active {
-		box-shadow: none;
-		color: var(--menu-color)
 	}
 }
