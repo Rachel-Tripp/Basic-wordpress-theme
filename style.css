@@ -1005,6 +1005,165 @@ footer a:active {
 	color: var(--footer-link-active-color);
 }
 /*============= media queries =============*/
+:root {
+	/*============= fonts =============*/
+	--heading-font: source-serif-variable, serif;
+	--body-font: gill-sans, sans-serif;
+	/*============= text size =============*/
+	font-size: calc(1.25em+0.5*((100vw-37.5em)/60));
+	--body-text-size: 1.2rem;
+	--h1-size: 3rem;
+	--h2-size: 2rem;
+	--h3-size: 1;
+	/*============= colors =============*/
+	--background: #f3e8ce;
+	--menu-background: #626275;
+	--menu-item-background: #f3e8ce;
+	--menu-shadow: #122448;
+	--menu-color: #626275;
+	--hover-menu-color: #122448;
+	--heading-color: #122448;
+	--body-color: #122448;
+	--link-initial: #1b57af;
+	--link-hover: #c89c2d;
+	--link-active: #f4c036;
+	--footer-background: #122448;
+	--footer-color: #626275;
+	--footer-link-color: #c89c2d;
+	--footer-link-hover-color: #f4c036;
+	--footer-link-active-color: #626275;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+*,
+    ::before,
+    ::after {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+body {
+	font-family: var(--body-font);
+	color: var(--body-color);
+	background: var(--background);
+	font-size: var(--body-text-size);
+	padding:0;
+	margin:0;
+}
+ul {
+	list-style-type: none;
+}
+a {
+	color: var(--link-initial);
+	text-decoration: none;
+}
+a:hover {
+	color: var(--link-hover);
+	transition-duration: 0.5s;
+}
+a:active {
+	color: var(--link-active);
+}
+h1 {
+	font-family: var(--heading-font);
+	font-size: var(--h1-size);
+	padding: var(--basic-padding);
+	margin: 0;
+	color: var(--heading-color);
+}
+h2 {
+	font-family: var(--heading-font);
+	font-size: var(--h2-size);
+	padding: 0;
+	margin: 0;
+	color: var(--heading-color);
+}
+.menu-toggle {
+	margin: 0 0 0 auto;
+	
+}
+.main-navigation ul {
+	padding: 0.5em;
+}
+.nav-menu {
+	background: var(--menu-background);
+	padding: 0.5em 0em;
+	margin: 0;
+}
+.nav-menu a {
+	background: var(--menu-item-background);
+	color: var(--menu-color);
+	padding: 0.8em;
+	margin: 0.7em auto;
+	border-radius: 2em;
+	box-shadow: 5px 6px 3px var(--menu-shadow);
+	width: 90%;
+	text-align: center;
+	font-size: 1.4rem;
+}
+.page-title, .entry-title {
+	text-align: center;
+	padding: 0.5em;
+	margin: 0em;
+}
+.page-content p, .entry-content{
+	padding: 1.5em;
+	margin:1em 0em;
+}
+.caption {
+	padding: 0;
+}
+.caption h3 {
+	font-size: 1rem;
+	padding: 0 2em;
+	margin: 1em 0 0.2em 0;
+}
+.caption p {
+	font-size: 1rem;
+	padding: 0 3em;
+	margin: 0.2em 0;
+	display: inline;
+}
+.site-footer {
+	padding: 0.5em;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.secondary {
+	grid-row: 1;
+	text-align: center;
+	margin: 1em 1em 0em 1em;
+	padding: 0;
+}
+.widget .widget_search {
+	margin: 0;
+}
+footer {
+	background: var(--footer-background);
+	color: var(--footer-color);
+}
+.site-info {
+	grid-row: 2;
+	padding: 0.7em 0.2em 1em 0.2em;
+	margin: 0;
+	text-align: center;
+	font-size: 0.9rem;
+}
+footer a {
+	color: var(--footer-link-color);
+}
+footer a:hover {
+	color: var(--footer-link-hover-color);
+}
+footer a:active {
+	color: var(--footer-link-active-color);
+}
+/*============= media queries =============*/
 @media screen and (min-width:37.5em) {
     :root {
         font-size: 1rem;
