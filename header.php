@@ -45,19 +45,11 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><svg width="32" height="32" role="img" focusable="false" alt="" xmlns="http://www.w3.org/2000/svg">
-
-<g>
- <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-</g>
-<g>
- <path id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
-</g>
-</svg><?php esc_html_e( 'Menu', '_s' ); ?></button>
+			<button aria-label="menu" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170.77 170.77"><defs><style>.cls-1{fill:#f3e7ce;stroke:#122448;stroke-miterlimit:10;}.cls-2{fill:#122448;}</style></defs><title>Asset 7</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><rect class="cls-1" x="0.5" y="0.5" width="169.77" height="169.77" rx="11.15"/><rect class="cls-2" x="13.33" y="13.52" width="144" height="29.78" rx="14.89"/><rect class="cls-2" x="13.33" y="127.74" width="144" height="29.78" rx="14.89"/><rect class="cls-2" x="13.33" y="70.63" width="144" height="29.78" rx="14.89"/></g></g></svg></button>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
+					'menu_id'        => 'primary-menu', 
 				) );
 			?>
 		</nav><!-- #site-navigation -->
