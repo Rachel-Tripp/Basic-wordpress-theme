@@ -1,16 +1,16 @@
 /*!
-Theme Name: _s
+Theme Name: Basic-Wordpress-Theme
 Theme URI: http://underscores.me/
-Author: Automattic
+Author: Rachel Tripp
 Author URI: http://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Description: Theme for https://racheetah-tripp.org
 Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: _s
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-This theme, like WordPress, is licensed under the GPL.
+This theme is based on another theme called _s, which, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
 _s is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
@@ -18,6 +18,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+Rachel Tripp edited some of thoes styles, so hopefully they all work.
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -40,13 +41,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Rachel Tripp's Styles
+	## Custom Properties - go here to change colors quickly - it's around ~line 850
+	## Content Styles
+	## Nav Menu Styles
+	## Body Styles
+	## Footer Styles
+	## Media Queries
+
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 html {
-	color: #666666;
-	font-family: serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
@@ -88,10 +95,6 @@ template {
 	display: none;
 }
 
-a {
-	background-color: transparent;
-}
-
 a:active,
 a:hover {
 	outline: 0;
@@ -108,11 +111,6 @@ strong {
 
 dfn {
 	font-style: italic;
-}
-
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
 }
 
 mark {
@@ -265,8 +263,6 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -336,11 +332,6 @@ html {
 *:after {
 	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
-}
-
-body {
-	background: #fff;
-	/* Fallback for when there is no custom background color defined. */
 }
 
 hr {
@@ -483,16 +474,22 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
+:root {
+	--link-color: #1b57af;
+	--visited-link-color: #f4c036;
+	--hover-link-color: #c89c2d;
+}
+
 a {
-	color: royalblue;
+	color: var(--link-color);
 }
 
 a:visited {
-	color: purple;
+	color: var(--visited-link-color);
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: var(--hover-link-color);
 }
 
 a:focus {
@@ -567,9 +564,6 @@ a:hover, a:active {
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
-	}
-	.main-navigation ul {
-		display: flex;
 	}
 }
 
@@ -849,7 +843,10 @@ object {
 	display: block;
 }
 
-/*============= author styles =============*/
+/*--------------------------------------------------------------
+# Rachel Tripp's Styles
+--------------------------------------------------------------*/
+/*============= ## Custom Properties =============*/
 :root {
 	/*============= fonts =============*/
 	--heading-font: source-serif-variable, serif;
@@ -876,7 +873,7 @@ object {
 	--footer-link-hover-color: #f4c036;
 	--footer-link-active-color: #626275;
 }
-/*============= Content Styles =============*/
+/*============= ## Content Styles =============*/
 html, body {
     margin: 0;
     padding: 0;
@@ -926,7 +923,7 @@ h2 {
 	margin: 0;
 	color: var(--heading-color);
 }
-/*============= Menu =============*/
+/*============= ## Nav Menu Styles =============*/
 .menu-toggle {
 	margin: 0 0 0 auto;
 	padding:  0 0 0 0;
@@ -973,7 +970,7 @@ h2 {
 		box-shadow: none;
 		color: var(--menu-color)
 	}
-/*============= Body =============*/
+/*============= ## Body Styles =============*/
 .page-title, .entry-title {
 	text-align: center;
 	padding: 0.5em;
@@ -993,7 +990,7 @@ h2 {
 		font-size: 0.8rem;
 		margin: 0.5em 0;
 }
-/*============= Footer =============*/
+/*============= ## Footer Styles =============*/
 .site-footer {
 	padding: 0.5em;
 	margin: 0;
@@ -1029,7 +1026,7 @@ footer a:hover {
 footer a:active {
 	color: var(--footer-link-active-color);
 }
-/*============= Media Queries =============*/
+/*============= ## Media Queries =============*/
 @media screen and (min-width:37.5em) {
     :root {
         font-size: 1rem;
