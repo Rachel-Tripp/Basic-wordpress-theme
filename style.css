@@ -955,6 +955,20 @@ h2 {
 	padding: 1.5em;
 	margin:1em 0em;
 }
+.caption {
+	padding: 0;
+}
+.caption h3 {
+	font-size: 1rem;
+	padding: 0 2em;
+	margin: 1em 0 0.2em 0;
+}
+.caption p {
+	font-size: 1rem;
+	padding: 0 3em;
+	margin: 0.2em 0;
+	display: inline;
+}
 .site-footer {
 	padding: 0.5em;
 	margin: 0;
@@ -1043,5 +1057,19 @@ footer a:active {
 	.nav-menu a:active {
 		box-shadow: none;
 		color: var(--body-color)
+	}
+	.caption {
+		padding: 0 3em;
+	}
+	.caption h3 {
+		font-size: 1rem;
+		padding: 0 4em;
+		margin: 1em 0 0.2em 0;
+	}
+	.caption p {
+		font-size: 1rem;
+		padding: 0 5em;
+		margin: 0.2em 0;
+		display: inline;
 	}
 }
