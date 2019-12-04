@@ -565,9 +565,9 @@ a:hover, a:active {
 	.menu-toggle {
 		display: none;
 	}
-}
-.main-navigation ul {
+	.main-navigation ul {
 	display: grid;
+	}
 }
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
