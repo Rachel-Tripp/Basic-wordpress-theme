@@ -861,7 +861,7 @@ object {
 	--h3-size: 1.3rem;
 	/*============= colors =============*/
 	--background: #f3e8ce;
-	--menu-background: #f3e8ce;
+	--menu-background: #c89c2d;
 	--menu-color: #122448;
 	--hover-menu-color: #626275;
 	--heading-color: #122448;
@@ -970,15 +970,31 @@ h3 {
 		color: var(--menu-color)
 	}
 /*============= ## Body Styles =============*/
+/* ----- HOME ----- */
 .page-title, .entry-title {
 	text-align: center;
-	padding: 0.5em;
-	margin: 0em;
+	padding: 0;
+	margin: 0;
 }
 .page-content p, .entry-content{
-	padding: 1.5em;
-	margin:1em 0em;
+	padding: 0;
+	margin: 0;
 }
+/* ----- ABOUT ----- */
+.selfie-description {
+	margin: 0;
+}
+.selfie-wrapper {
+		align-items: center;
+		padding: 1em;
+		display: grid;
+	}
+	.selfie-description {
+		padding: 2em 1em 1em 1em;
+		text-indent: 2rem;
+		grid-row: 2;
+	}
+/* ----- GALLERY ----- */
 .caption {
 	padding: 0em 2em 0 2em;
 }
@@ -990,7 +1006,15 @@ h3 {
 	font-size: 0.9rem;
 	margin: 0.3em 0;
 }
+/* ----- GALLERY 2 ----- */
+/* - In progress - */
+/* ----- CONTACT ----- */
+/* - In progress - */
 /*============= ## Footer Styles =============*/
+.sd-sharing {
+		text-align: center;
+		margin: 0 0 2em 0;
+	}
 .site-footer {
 	padding: 0.5em;
 	margin: 0;
@@ -1027,17 +1051,19 @@ footer a:active {
 	color: var(--footer-link-active-color);
 }
 /*============= ## Media Queries =============*/
+/* ----- iPad ----- */
 @media screen and (min-width:37.5em) {
     :root {
         font-size: 1rem;
     }
+/* ----- Menu ----- */
 	.nav-menu {
 		background: var(--menu-background);
-		padding: 1.5em 0.5em 1em 0.5em;
+		padding: 0;
 		margin: 1em;
 	}
 	.nav-menu a {
-		padding: 0;
+		padding: 1.3em 0;
 		margin: 0 auto;
 	}
 	.menu-item-27 {
@@ -1055,6 +1081,23 @@ footer a:active {
 	.menu-item-82 {
 		grid-column: 5;
 	}
+	.entry-title {
+		display: none;
+	}
+/* ----- ABOUT (iPad) ----- */
+	.selfie-wrapper {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+		align-items: center;
+		font-size: 0.9rem;
+		padding: 4em 2em 2em 2em;
+	}
+	.selfie-description {
+		padding: 1em 2em 0 0;
+		text-indent: 2rem;
+		grid-row: 1;
+	}
+/* ----- GALLERY  (iPad)---- */
 	.caption {
 		padding: 0 5em;
 	}
@@ -1067,6 +1110,7 @@ footer a:active {
 		margin: 0.5em 0em;
 	}
 }
+/* ----- Computer ----- */
 @media screen and (min-width:56em) {
     :root {
         font-size:1.3rem;
@@ -1075,22 +1119,36 @@ footer a:active {
 	{
 		width: 5.5em;
 	}
-	.page-content p, .entry-content{
-		padding: 1.5em 8em;
-		margin:1em 0em;
+	.entry-content{
+		padding: 0;
+		margin: 0;
 	}
 	.main-navigation ul {
-		padding-left: 2em;
+		padding-left: 0em;
 	}
 	.nav-menu {
-		background: var(--background);
-		padding: 1em 2em;
+		background: var(--menu-background);
+		padding: 0;
 		margin: 0;
 	}
 	.menu-main-nav-container {
-		padding: 2em 1em;
-		background: var(--background);
+		background: var(--menu-background);
+		padding: 0;
 	}
+	.nav-menu a {
+		padding: 1.5em 0;
+	}
+/* -- ABOUT (computer) -- */
+	.selfie-wrapper {
+		padding: 2em;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.selfie-description {
+		padding: 0 6em 0 0;
+		max-width: 800px;
+	}
+/* -- GALLERY (computer) -- */
 	.caption {
 		padding: 0 3em;
 	}
