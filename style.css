@@ -1175,6 +1175,11 @@ footer a:active {
 		padding: 0 4em 1em 4em;
 	}
 /* --- CONTACT (iPad)--- */
+	.contact-p {
+		font-size: 1rem;
+		padding: 0 3em;
+		margin: 0 0 2em 0;
+	}
 	.contact-form {
 		padding: 0 2em 1em 2em;
 	}
@@ -1253,6 +1258,12 @@ footer a:active {
 		margin: 0 auto;
 	}
 /* -- CONTACT (computer) -- */
+	.contact-p {
+		max-width: 1000px;
+		margin: 0 auto 3em auto;
+		padding: 0 4em;
+		
+	}
 	.contact-form {
 		padding: 0 4em 1em 4em;
 		margin: 0 auto;
