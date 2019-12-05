@@ -1083,7 +1083,7 @@ footer a:active {
     :root {
         font-size: 1rem;
     }
-/* ----- Menu (iPad) ----- */
+/* ----- Menu ----- */
 	.nav-menu {
 		background: var(--menu-background);
 		padding: 0;
@@ -1171,7 +1171,7 @@ footer a:active {
     }
 	.nav-menu a 
 	{
-		width: 5.5em;
+		width: 6.2em;
 	}
 	.entry-content{
 		padding: 0;
@@ -1179,39 +1179,69 @@ footer a:active {
 	}
 	.main-navigation ul {
 		padding-left: 0em;
+		margin: 0 auto;
 	}
 	.nav-menu {
 		background: var(--menu-background);
-		padding: 0;
+		padding: 0 auto;
 		margin: 0;
+		max-width: 1200px;
 	}
 	.menu-main-nav-container {
 		background: var(--menu-background);
 		padding: 0;
 	}
 	.nav-menu a {
-		padding: 1.5em 0;
+		padding: 1.5em 0.5em;
+	}
+/* -- HOME (computer) -- */
+	.home-p {
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 /* -- ABOUT (computer) -- */
 	.selfie-wrapper {
 		padding: 2em;
 		width: 90%;
 		margin: 0 auto;
+		max-width: 1200px;
 	}
 	.selfie-description {
-		padding: 0 6em 0 0;
-		max-width: 800px;
+		padding: 0 3em 0 0;
+		margin: 0 0 0 auto;
 	}
 /* -- GALLERY (computer) -- */
+	.gallery-h2 {
+		text-align: center;
+	}
+	.gallery-p {
+		max-width: 1200px;
+		margin: 0.5em auto;
+	}
+	.hurricane-section {
+		display: grid;
+	}
+	.hurricane-painting {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
 	.caption {
-		padding: 0 3em;
+		padding-left: 0em;
+		margin: 0 auto;
 	}
 	.caption-body {
 		font-size: 0.9em;
 	}
+/* - GALLERY 2 (computer) - */
+	.gallery-2-p {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 /* -- CONTACT (computer) -- */
 	.contact-form {
 		padding: 0 4em 1em 4em;
-		max-width: 1200px
+		margin: 0 auto;
+		display: grid;
+		max-width: 1200px;
 	}
 }
