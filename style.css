@@ -1221,7 +1221,7 @@ footer a:active {
 	}
 /* -- ABOUT (computer) -- */
 	.selfie-wrapper {
-		padding: 2em;
+		padding: 0 2em 2em 2em;
 		width: 90%;
 		margin: 0 auto;
 		max-width: 1200px;
