@@ -971,7 +971,10 @@ h3 {
 	}
 /*============= ## Body Styles =============*/
 /* ----- HOME ----- */
-.page-title, .entry-title {
+.entry-title {
+	padding: 0.5em;
+}
+.page-title, {
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -980,23 +983,42 @@ h3 {
 	padding: 0;
 	margin: 0;
 }
+.home-p {
+	padding: 1em;
+	margin: 0;
+	text-indent: 2rem;
+}
 /* ----- ABOUT ----- */
 .selfie-description {
 	margin: 0;
 }
 .selfie-wrapper {
 		align-items: center;
-		padding: 1em;
 		display: grid;
 	}
-	.selfie-description {
+.selfie {
+	padding: 0 1em;
+}
+.selfie-description {
 		padding: 2em 1em 1em 1em;
 		text-indent: 2rem;
 		grid-row: 2;
 	}
 /* ----- GALLERY ----- */
+.gallery-h2 {
+	padding: 0 1em;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.gallery-p {
+	padding: 0 1em;
+	text-indent: 2rem;
+}
+.hurricane-painting  {
+	padding: 0 0.5em;
+}
 .caption {
-	padding: 0em 2em 0 2em;
+	padding: 0em 2em 2em 2em;
 }
 .caption-body {
 	font-weight: normal;
@@ -1007,9 +1029,14 @@ h3 {
 	margin: 0.3em 0;
 }
 /* ----- GALLERY 2 ----- */
-/* - In progress - */
+.gallery-2-p {
+	padding: 0 1em;
+	text-indent: 2rem;
+}
 /* ----- CONTACT ----- */
-/* - In progress - */
+.contact-form {
+	padding: 0 1em 1em 1em;
+}
 /*============= ## Footer Styles =============*/
 .sd-sharing {
 		text-align: center;
@@ -1056,7 +1083,7 @@ footer a:active {
     :root {
         font-size: 1rem;
     }
-/* ----- Menu ----- */
+/* ----- Menu (iPad) ----- */
 	.nav-menu {
 		background: var(--menu-background);
 		padding: 0;
@@ -1081,25 +1108,43 @@ footer a:active {
 	.menu-item-82 {
 		grid-column: 5;
 	}
-	.entry-title {
-		display: none;
+/* ----- HOME (iPad) ----- */
+	.home-p {
+		font-size: 1rem;
+		padding: 0 4em 1em 4em;
 	}
 /* ----- ABOUT (iPad) ----- */
 	.selfie-wrapper {
 	display: grid;
 	grid-template-columns: 1.5fr 1fr;
 		align-items: center;
-		font-size: 0.9rem;
-		padding: 4em 2em 2em 2em;
+		font-size: 1rem;
+		padding: 0 1em 2em 1em;
 	}
 	.selfie-description {
-		padding: 1em 2em 0 0;
+		padding: 0 2em 0 1em;
 		text-indent: 2rem;
 		grid-row: 1;
 	}
+	.selfie {
+		padding: 0 1em 0 0;
+	}
 /* ----- GALLERY  (iPad)---- */
+	.gallery-h2 {
+		text-align: left;
+		font-size: 1.75rem;
+		padding: 0 3rem
+	}
+	.gallery-p {
+		padding: 0 3em;
+		margin: 0.5em 0;
+		font-size: 1rem;
+	}
+	.hurricane-painting {
+		padding: 0.5em 1em 0 1em;
+	}
 	.caption {
-		padding: 0 5em;
+		padding: 0 5em 2em 5em;
 	}
 	.caption-body {
 		font-size: 1rem;
@@ -1108,6 +1153,15 @@ footer a:active {
 		font-size: 1rem;
 		margin: 1em 0;
 		margin: 0.5em 0em;
+	}
+/* --- GALLERY 2 (iPad)--- */
+	.gallery-2-p {
+		font-size: 1rem;
+		padding: 0 4em 1em 4em;
+	}
+/* --- CONTACT (iPad)--- */
+	.contact-form {
+		padding: 0 2em 1em 2em;
 	}
 }
 /* ----- Computer ----- */
@@ -1154,5 +1208,10 @@ footer a:active {
 	}
 	.caption-body {
 		font-size: 0.9em;
+	}
+/* -- CONTACT (computer) -- */
+	.contact-form {
+		padding: 0 4em 1em 4em;
+		max-width: 1200px
 	}
 }
