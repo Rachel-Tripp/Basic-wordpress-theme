@@ -858,7 +858,7 @@ object {
 	--body-text-size: 1.2rem;
 	--h1-size: 3rem;
 	--h2-size: 2rem;
-	--h3-size: 1.5rem;
+	--h3-size: 1.3rem;
 	/*============= colors =============*/
 	--background: #f3e8ce;
 	--menu-background: #f3e8ce;
@@ -925,6 +925,9 @@ h2 {
 	margin: 0;
 	color: var(--heading-color);
 }
+h3 {
+	font-size: var(--h3-size);
+}
 /*============= ## Nav Menu Styles =============*/
 .menu-toggle {
 	margin: 0 0 0 auto;
@@ -977,14 +980,15 @@ h2 {
 	margin:1em 0em;
 }
 .caption {
-	padding: 0 1em;
+	padding: 0em 2em 0 2em;
 }
 .caption-body {
 	font-weight: normal;
+	font-size: 0.8rem;
 }
-.caption-body h3 {
-		font-size: 0.8rem;
-		margin: 0.5em 0;
+.caption h3 {
+	font-size: 0.9rem;
+	margin: 0.3em 0;
 }
 /*============= ## Footer Styles =============*/
 .site-footer {
@@ -1051,32 +1055,46 @@ footer a:active {
 	.menu-item-82 {
 		grid-column: 5;
 	}
-	.caption-body {
-		font-weight: normal;
+	.caption {
+		padding: 0 5em;
 	}
-	.caption-body h3 {
-		font-size: 0.9rem;
+	.caption-body {
+		font-size: 1rem;
+	}
+	.caption h3 {
+		font-size: 1rem;
 		margin: 1em 0;
+		margin: 0.5em 0em;
 	}
 }
 @media screen and (min-width:56em) {
     :root {
         font-size:1.3rem;
     }
-	.nav-menu a {
+	.nav-menu a 
+	{
 		width: 5.5em;
 	}
 	.page-content p, .entry-content{
 		padding: 1.5em 8em;
 		margin:1em 0em;
 	}
+	.main-navigation ul {
+		padding-left: 2em;
+	}
 	.nav-menu {
 		background: var(--background);
-		padding: 1em;
+		padding: 1em 2em;
 		margin: 0;
 	}
 	.menu-main-nav-container {
 		padding: 2em 1em;
 		background: var(--background);
+	}
+	.caption {
+		padding: 0 3em;
+	}
+	.caption-body {
+		font-size: 0.9em;
 	}
 }
