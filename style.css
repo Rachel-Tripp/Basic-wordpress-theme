@@ -1034,8 +1034,23 @@ h3 {
 	text-indent: 2rem;
 }
 /* ----- CONTACT ----- */
+.contact-p {
+	margin: 0 0 1em 0;
+	padding: 0 1em;
+	text-indent: 2rem;
+}
 .contact-form {
-	padding: 0 1em 1em 1em;
+	padding: 1em 1em 1em 1em;
+}
+.checkbox-multiple {
+	padding: 0 1em;
+}
+.checkbox {
+	padding: 1em 0;
+}
+.contact-submit {
+	text-align: center;
+	margin: 1em 0 0 0;
 }
 /*============= ## Footer Styles =============*/
 .sd-sharing {
