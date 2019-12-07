@@ -1141,6 +1141,7 @@ footer a:active {
 	.selfie-description {
 		padding: 0 2em 0 1em;
 		text-indent: 2rem;
+		margin: 0;
 		grid-row: 1;
 	}
 	.selfie {
