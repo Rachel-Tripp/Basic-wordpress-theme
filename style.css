@@ -1085,6 +1085,9 @@ font-style: normal;
 	margin: 1em 0 0 0;
 }
 /*============= ## Footer Styles =============*/
+.site-info {
+	display: none;
+}
 .sd-sharing {
 		text-align: center;
 		margin: 0 0 2em 0;
@@ -1098,11 +1101,32 @@ font-style: normal;
 .secondary {
 	grid-row: 1;
 	text-align: center;
-	margin: 1em 1em 0em 1em;
+	margin: 1em;
 	padding: 0;
 }
-.widget .widget_search {
+.widget_nav_menu, .widget_nav_menu .menu, .widget_custom_html{
 	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.widget-title {
+	margin: 0.5em 0;
+	text-align: center;
+}
+.follow-section {
+	display: grid;
+}
+.follow-section a, aside a{
+	padding: 0 0 0 1.5em;
+}
+#footer-sidebar1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.widget_search {
+	grid-column-start:1;
+	grid-column-end:3;
+	margin: 0.5em 0 1.25em 0;
 }
 footer {
 	background: var(--footer-background);
@@ -1232,6 +1256,10 @@ footer a:active {
 	.contact-form {
 		padding: 0 2em 1em 2em;
 	}
+}
+/* --- Footer (iPad)--- */
+.menu-footer-links-container{
+	display: grid;
 }
 /* ----- Computer ----- */
 @media screen and (min-width:56em) {
