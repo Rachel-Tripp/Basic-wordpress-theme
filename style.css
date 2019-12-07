@@ -1213,10 +1213,6 @@ footer a:active {
     :root {
         font-size:1.3rem;
     }
-	.nav-menu a 
-	{
-		width: 6.2em;
-	}
 	.entry-content{
 		padding: 0;
 		margin: 0;
@@ -1229,7 +1225,7 @@ footer a:active {
 		background: var(--menu-background);
 		padding: 0 auto;
 		margin: 0;
-		max-width: 1200px;
+		max-width: 1400px;
 	}
 	.menu-main-nav-container {
 		background: var(--menu-background);
@@ -1237,6 +1233,8 @@ footer a:active {
 	}
 	.nav-menu a {
 		padding: 1.5em 0;
+		width: 8em;
+		font-size: 1rem;
 	}
 /* -- HOME (computer) -- */
 	.home-p {
@@ -1293,5 +1291,11 @@ footer a:active {
 		margin: 0 auto;
 		display: grid;
 		max-width: 1200px;
+	}
+}
+@media screen and (min-width:90em) {
+	.nav-menu a {
+		width: 11em;
+		font-size: 1.2rem;
 	}
 }
