@@ -1063,6 +1063,9 @@ font-style: normal;
 }
 .contact-form {
 	padding: 1em 1em 1em 1em;
+	font-family: source-serif-pro, serif;
+	font-weight: 700;
+	font-style: normal;
 }
 .checkbox-multiple {
 	padding: 0 1em;
