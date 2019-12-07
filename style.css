@@ -969,11 +969,11 @@ h4, h5, h6 {
 .nav-menu a {
 	background: var(--menu-background);
 	color: var(--menu-color);
-	padding: 0.6em;
+	padding: 0.5em;
 	margin: 0.2em auto;
 	box-shadow: none;
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	font-family: gill-sans-nova, sans-serif;
 	font-weight: 600;
 	font-style: normal;
@@ -1032,7 +1032,7 @@ h4, h5, h6 {
 	padding: 0 1em;
 	text-indent: 2rem;
 }
-.hurricane-painting  {
+.hurricane-painting, .trees-painting, .wp-image-210 {
 	padding: 0 0.5em;
 }
 .caption {
@@ -1066,6 +1066,13 @@ font-style: normal;
 	font-family: source-serif-pro, serif;
 	font-weight: 700;
 	font-style: normal;
+}
+.textarea, .name, .email {
+	font-weight: 400;
+	font-family: gill-sans-nova;
+}
+.grunion-field-label, textarea {
+	font-family: source-serif-pro;
 }
 .checkbox-multiple {
 	padding: 0 1em;
@@ -1132,6 +1139,7 @@ footer a:active {
 	.nav-menu a {
 		padding: 1.4em 0;
 		margin: 0 auto;
+		font-size: 1.2rem;
 		text-transform: uppercase;
 	}
 	.menu-item-27 {
@@ -1182,8 +1190,22 @@ footer a:active {
 		margin: 0.5em 0;
 		font-size: 1rem;
 	}
+	.gallery-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 1em 0.5em 0 0.5em;
+	}
 	.hurricane-painting {
-		padding: 0.5em 1em 0 1em;
+		padding: 0;
+	}
+	.hurricane-section {
+	}
+	.trees-painting {
+		grid-row-end: 3;
+	}
+	.wp-image-210 {
+		grid-row-start: 2;
+		margin: -8em 0 0 0;
 	}
 	.caption {
 		padding: 0 5em 2em 5em;
@@ -1268,10 +1290,9 @@ footer a:active {
 	}
 	.hurricane-painting {
 		max-width: 1000px;
-		margin: 0 auto;
 	}
 	.caption {
-		padding-left: 0em;
+		padding-left: 2em;
 		margin: 0 auto;
 	}
 	.caption-body {
@@ -1296,7 +1317,7 @@ footer a:active {
 		max-width: 1200px;
 	}
 }
-@media screen and (min-width:90em) {
+@media screen and (min-width:85em) {
 	.nav-menu a {
 		width: 11em;
 		font-size: 1.2rem;
