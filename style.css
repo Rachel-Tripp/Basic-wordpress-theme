@@ -992,7 +992,7 @@ h4, h5, h6 {
 	padding: 0.5em;
 	text-align: center;
 }
-.page-title, {
+.page-title {
 	text-align: center;
 	padding: 0;
 	margin: 0;
@@ -1088,10 +1088,24 @@ font-style: normal;
 .site-info {
 	display: none;
 }
-.sd-sharing {
-		text-align: center;
-		margin: 0 0 2em 0;
-	}
+footer {
+	background: var(--footer-background);
+	color: var(--footer-color);
+}
+footer a {
+	color: var(--footer-link-color);
+}
+footer a:hover {
+	color: var(--footer-link-hover-color);
+}
+footer a:active {
+	color: var(--footer-link-active-color);
+}
+.widget_search {
+	grid-column-start:1;
+	grid-column-end:3;
+	margin: 0em 0 1.25em 0;
+}
 .site-footer {
 	padding: 0.5em;
 	margin: 0;
@@ -1113,24 +1127,35 @@ font-style: normal;
 	margin: 0.5em 0;
 	text-align: center;
 }
-.follow-section {
-	display: grid;
+.sd-sharing {
+		text-align: center;
+		margin: 0 0 2em 0;
 }
 .follow-section a, aside a{
-	padding: 0 0 0 1.5em;
+	padding: 0;
+}
+#menu-footer-links, .follow-section {
+	margin: 0 auto;
+	padding: 0;
+}
+.follow-section {
+	margin: 0 auto;
+	width: 3.8em;
 }
 #footer-sidebar1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
-.widget_search {
-	grid-column-start:1;
-	grid-column-end:3;
-	margin: 0.5em 0 1.25em 0;
+#custom_html-3 {
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
-footer {
-	background: var(--footer-background);
-	color: var(--footer-color);
+#custom_html-3 h4 {
+	font-family: gill-sans-nova, serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+	text-align: center;
+	margin: 1em 0 0 0;
 }
 .site-info {
 	grid-row: 2;
@@ -1138,15 +1163,6 @@ footer {
 	margin: 0;
 	text-align: center;
 	font-size: 0.9rem;
-}
-footer a {
-	color: var(--footer-link-color);
-}
-footer a:hover {
-	color: var(--footer-link-hover-color);
-}
-footer a:active {
-	color: var(--footer-link-active-color);
 }
 /*============= ## Media Queries =============*/
 /* ----- iPad ----- */
@@ -1222,8 +1238,6 @@ footer a:active {
 	.hurricane-painting {
 		padding: 0;
 	}
-	.hurricane-section {
-	}
 	.trees-painting {
 		grid-row-end: 3;
 	}
@@ -1256,10 +1270,29 @@ footer a:active {
 	.contact-form {
 		padding: 0 2em 1em 2em;
 	}
-}
 /* --- Footer (iPad)--- */
-.menu-footer-links-container{
-	display: grid;
+	.menu-footer-links-container{
+		display: grid;
+	}
+	#footer-sidebar1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.widget_search {
+		grid-column-start: 2;
+		margin: 0;
+		padding: 2em 0;
+	}
+	.widget_nav_menu {
+		grid-row-start: 1;
+	}
+	#custom_html-2 {
+		grid-row-start: 1;
+		grid-column-start: 3;
+	}
+	#custom_html-3 {
+		grid-column-end: 4;
+	}
 }
 /* ----- Computer ----- */
 @media screen and (min-width:56em) {
