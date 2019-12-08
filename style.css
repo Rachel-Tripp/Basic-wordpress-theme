@@ -1377,6 +1377,20 @@ footer a:active {
 		display: grid;
 		max-width: 1200px;
 	}
+/* -- footer (computer) -- */
+	.secondary {
+		margin: 0 0 0.5em 0;
+		font-size: 1rem;
+	}
+	.secondary h3 {
+		font-size: 1rem;
+	}
+	#custom_html-3 .copyright{
+		font-size: 0.8rem;
+	}
+	#custom_html-3 h4{
+		margin: 0;
+	}
 }
 @media screen and (min-width:85em) {
 	.nav-menu a {
