@@ -869,6 +869,7 @@ object {
 	--link-initial: #f3e8ce;
 	--link-hover: #c89c2d;
 	--link-active: #f4c036;
+	--h2-hover: #c89c2d;
 	--footer-background: #122448;
 	--footer-color: #f3e8ce;
 	--footer-link-color: #c89c2d;
@@ -1031,6 +1032,12 @@ h4, h5, h6 {
 .gallery-p {
 	padding: 0 1em;
 	text-indent: 2rem;
+	margin: 0 0 1.5em 0;
+}
+.gallery-links-h2 {
+	text-align: center;
+	padding-bottom: 0.25em;
+	font-size: 1.75rem;
 }
 .gallery-wrapper img{
 	padding: 0 0.5em;
@@ -1049,11 +1056,20 @@ font-style: normal;
 	font-size: 0.9rem;
 	margin: 0.3em 0;
 }
-/* ----- GALLERY 2 ----- */
-.gallery-2-p {
-	padding: 0 1em;
-	text-indent: 2rem;
-	margin: 0 0 2em 0;
+.gallery-wrapper .student-work-img, .gallery-wrapper .hs-pieces-img {
+	padding: 0 2em;
+	margin: 0 0 1.5em 0;
+}
+.gallery-wrapper .student-work-img:hover, .gallery-wrapper .hs-pieces-img:hover, .gallery-wrapper .student-work-img:focus, .gallery-wrapper .hs-pieces-img:focus {
+	filter: blur(3px) opacity(90%);
+	transition: 0.5s;
+}
+.gallery-links-h2:hover, .gallery-links-h2:focus {
+	color: var(--h2-hover);
+	transition: 0.5s;
+}
+.gallery-links:active {
+	filter: sepia(100%);
 }
 /* ----- CONTACT ----- */
 .contact-p {
@@ -1249,7 +1265,7 @@ footer a:active {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		margin: 0 0 3em 0;
-		padding: 1em 0.5em 0 0.5em;
+		padding: 1em 3em 0 3em;
 	}
 	.wp-image-210 {
 		margin: 0;
@@ -1264,6 +1280,19 @@ footer a:active {
 		font-size: 1rem;
 		margin: 1em 0;
 		margin: 0.5em 0em;
+	}
+	.student-work-link {
+		padding: 0 1em 0 0;
+	}
+	.hs-pieces-link {
+		padding: 0 0 0 1em;
+	}
+	.gallery-wrapper .student-work-img, .gallery-wrapper .hs-pieces-img {
+		padding: 0;
+		margin: 0;
+	}
+	.gallery-wrapper .hs-pieces-img {
+		margin: 0.3em 0 0 0;
 	}
 	.Mario-mural-section {
 		grid-column-start: 1;
@@ -1308,7 +1337,7 @@ footer a:active {
 /* ----- Computer ----- */
 @media screen and (min-width:56em) {
     :root {
-        font-size:1.3rem;
+      font-size:1.3rem;
     }
 	.entry-content{
 		padding: 0;
@@ -1361,6 +1390,16 @@ footer a:active {
 		max-width: 1400px;
 		margin: .5em auto 0 auto;
 	}
+	.gallery-link-wrapper {
+		max-width: 1000px;
+		margin: 0.5em auto 1.5em auto;
+	}
+	.student-work-link {
+		padding: 0 1em 0 0;
+	}
+	.hs-pieces-link {
+		padding: 0 0 0 1em;
+	}
 	.hurricane-section {
 		display: grid;
 	}
@@ -1370,11 +1409,6 @@ footer a:active {
 	}
 	.caption-body {
 		font-size: 0.9em;
-	}
-/* - GALLERY 2 (computer) - */
-	.gallery-2-p {
-		max-width: 1200px;
-		margin: 0 auto;
 	}
 /* -- CONTACT (computer) -- */
 	.contact-p {
