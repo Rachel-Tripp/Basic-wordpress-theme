@@ -861,21 +861,22 @@ object {
 	--h3-size: 1.3rem;
 	/*============= colors =============*/
 	--background: #f3e8ce;
-	--light-opaque-background: rgb(243, 232, 206, 0.5);/*light*/
+	--light-opaque-background: rgb(243, 232, 206, 0.5);
 	--dark-opaque-background: rgb(18, 36, 72, 0.75);
-	--menu-background: #c89c2d;
-	--menu-color: #122448;
-	--hover-menu-color: #626275;
+	--menu-background: #6d280e;
+	--menu-main-background: #122448;
+	--menu-color: #f3e8ce;
+	--hover-menu-color: #6d280e;
 	--heading-color: #122448;
 	--body-color: #122448;
 	--link-initial: #f3e8ce;
 	--link-hover: #c89c2d;
-	--link-active: #f4c036;
-	--h2-hover: #c89c2d;
+	--link-active: #c89c2d;
+	--h2-hover: #6d280e;
 	--footer-background: #122448;
 	--footer-color: #f3e8ce;
 	--footer-link-color: #c89c2d;
-	--footer-link-hover-color: #f4c036;
+	--footer-link-hover-color: #6d280e;
 	--footer-link-active-color: #626275;
 }
 /*============= ## Content Styles =============*/
@@ -959,18 +960,18 @@ h4, h5, h6 {
 	padding: 0.3em;
 }
 .menu-btn path {
-	fill: var(--menu-color);
+	fill: var(--menu-main-background);
 }
 .main-navigation {
-	background: var(--menu-color);
+	background: var(--menu-main-background);
 }
 .nav-menu {
-	background: var(--menu-background);
+	background: var(--footer-background);
 	padding: 0.5em 0em;
 	margin: 0;
 }
 .nav-menu a {
-	background: var(--menu-background);
+	background: var(--footer-background);
 	color: var(--menu-color);
 	padding: 0.5em;
 	margin: 0.2em auto;
@@ -1231,6 +1232,9 @@ footer a:active {
 		margin: 0 auto;
 		font-size: 1.2rem;
 	}
+	#primary-menu {
+		text-align: center;
+	}
 	.menu-item-27 {
 		grid-column: 1;
 	}
@@ -1240,11 +1244,8 @@ footer a:active {
 	.menu-item-24 {
 		grid-column: 3;
 	}
-	.menu-item-34 {
-		grid-column: 4;
-	}
 	.menu-item-82 {
-		grid-column: 5;
+		grid-column: 4;
 	}
 /* ----- HOME (iPad) ----- */
 	.home-p {
@@ -1379,6 +1380,7 @@ footer a:active {
 		padding: 1.5em 0;
 		width: 8em;
 		font-size: 1rem;
+		background: var(--menu-background);
 	}
 /* -- HOME (computer) -- */
 	.hentry {
@@ -1417,9 +1419,24 @@ footer a:active {
 		margin: 0 0 0 auto;
 	}
 /* -- GALLERY (computer) -- */
+	.gallery-background-img {
+		margin: 0 0 2em 0;
+		padding: 0 0 65em 0;
+		background-image: url("https://racheetah-tripp.org/wp-content/uploads/2019/12/Hurricane-Painting-01-compressed-scaled-e1575860565832.jpg");
+  height: 1200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	}
+	.gallery-p-background {
+		background: var(--dark-opaque-background);
+	}
 	.gallery-p {
-		max-width: 1200px;
-		margin: 0.5em auto;
+		max-width: 1050px;
+		margin: 15em auto 1em auto;
+		padding: 2em;
+		color: var(--background);
 	}
 	.gallery-h2 {
 		max-width: 1200px;
@@ -1429,9 +1446,13 @@ footer a:active {
 		max-width: 1400px;
 		margin: .5em auto 0 auto;
 	}
+	.gallery-links-again {
+		background: var(--light-opaque-background);
+	}
 	.gallery-link-wrapper {
 		max-width: 1000px;
-		margin: 0.5em auto 1.5em auto;
+		margin: 3em auto 0em auto;
+		padding: 1em 3em 1.5em 3em;
 	}
 	.student-work-link {
 		padding: 0 1em 0 0;
