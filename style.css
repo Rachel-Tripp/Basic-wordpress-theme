@@ -1383,6 +1383,10 @@ footer a:active {
 		max-width: 1200px;
 		margin: 0.5em auto;
 	}
+	.gallery-h2 {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 	.gallery-wrapper {
 		max-width: 1400px;
 		margin: .5em auto 0 auto;
