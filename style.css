@@ -861,6 +861,8 @@ object {
 	--h3-size: 1.3rem;
 	/*============= colors =============*/
 	--background: #f3e8ce;
+	--light-opaque-background: rgb(243, 232, 206, 0.5);/*light*/
+	--dark-opaque-background: rgb(18, 36, 72, 0.75);
 	--menu-background: #c89c2d;
 	--menu-color: #122448;
 	--hover-menu-color: #626275;
@@ -990,6 +992,9 @@ h4, h5, h6 {
 /*============= ## Body Styles =============*/
 /* ----- HOME ----- */
 .entry-title {
+	display: none;
+}
+h1 {
 	padding: 0.5em;
 	text-align: center;
 }
@@ -1003,7 +1008,7 @@ h4, h5, h6 {
 	margin: 0;
 }
 .home-p {
-	padding: 0 1em 1em 1em;
+	padding: 0.5em 1em 1em 1em;
 	margin: 0;
 	text-indent: 2rem;
 }
@@ -1231,7 +1236,7 @@ footer a:active {
 /* ----- HOME (iPad) ----- */
 	.home-p {
 		font-size: 1rem;
-		padding: 0 4em 1em 4em;
+		padding: 1em 4em 1em 4em;
 	}
 /* ----- ABOUT (iPad) ----- */
 	.selfie-wrapper {
@@ -1363,9 +1368,29 @@ footer a:active {
 		font-size: 1rem;
 	}
 /* -- HOME (computer) -- */
+	.hentry {
+		margin: 0;
+	}
+	.home-p-background {
+		background: var(--dark-opaque-background);
+	}
 	.home-p {
 		max-width: 1200px;
 		margin: 0 auto;
+		padding: 3em 8em 3em 8em;
+		color: var(--background);
+	}
+	.home-page-image {
+		display: none;
+	}
+	.home-wrapper {
+		padding: 22em 0 30em 0;
+		background-image: url("https://racheetah-tripp.org/wp-content/uploads/2019/12/Hurricane-Painting-compressed-scaled-e1575861112823.jpg");
+  height: 900px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	}
 /* -- ABOUT (computer) -- */
 	.selfie-wrapper {
