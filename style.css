@@ -1032,7 +1032,7 @@ h4, h5, h6 {
 	padding: 0 1em;
 	text-indent: 2rem;
 }
-.hurricane-painting, .trees-painting, .wp-image-210 {
+.gallery-wrapper img{
 	padding: 0 0.5em;
 }
 .caption {
@@ -1104,7 +1104,7 @@ footer a:active {
 .widget_search {
 	grid-column-start:1;
 	grid-column-end:3;
-	margin: 0em 0 1.25em 0;
+	margin: 0;
 }
 .site-footer {
 	padding: 0.5em;
@@ -1115,17 +1115,29 @@ footer a:active {
 .secondary {
 	grid-row: 1;
 	text-align: center;
-	margin: 1em;
+	margin: 0.5em 0;
 	padding: 0;
+}
+.secondary h3 {
+	font-family: gill-sans-nova, serif;
+	font-weight: 400;
+	text-align: center;
+	font-size: 1.5rem;
 }
 .widget_nav_menu, .widget_nav_menu .menu, .widget_custom_html{
 	margin: 0;
 	padding: 0;
 	text-align: left;
 }
+.widget_nav_menu {
+	padding: 0 0 0 1.5em;
+}
 .widget-title {
-	margin: 0.5em 0;
+	margin: 0.5em 0 0.25em;
 	text-align: center;
+}
+#custom_html-2 {
+	padding: 0 1.5em 0 0;
 }
 .sd-sharing {
 		text-align: center;
@@ -1137,6 +1149,10 @@ footer a:active {
 #menu-footer-links, .follow-section {
 	margin: 0 auto;
 	padding: 0;
+}
+#menu-footer-links {
+	margin: 0 auto;
+	width: 3.25em;
 }
 .follow-section {
 	margin: 0 auto;
@@ -1155,7 +1171,7 @@ footer a:active {
 	font-size: 1.1rem;
 	font-weight: 400;
 	text-align: center;
-	margin: 1em 0 0 0;
+	margin: 0.75em 0 0 0;
 }
 .site-info {
 	grid-row: 2;
@@ -1233,20 +1249,14 @@ footer a:active {
 	.gallery-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		margin: 0 0 3em 0;
 		padding: 1em 0.5em 0 0.5em;
 	}
-	.hurricane-painting {
-		padding: 0;
-	}
-	.trees-painting {
-		grid-row-end: 3;
-	}
 	.wp-image-210 {
-		grid-row-start: 2;
-		margin: -8em 0 0 0;
+		margin: 0;
 	}
 	.caption {
-		padding: 0 5em 2em 5em;
+		padding: 0 2em 2em 2em;
 	}
 	.caption-body {
 		font-size: 1rem;
@@ -1256,10 +1266,9 @@ footer a:active {
 		margin: 1em 0;
 		margin: 0.5em 0em;
 	}
-/* --- GALLERY 2 (iPad)--- */
-	.gallery-2-p {
-		font-size: 1rem;
-		padding: 0 4em 1em 4em;
+	.Mario-mural-section {
+		grid-column-start: 1;
+		grid-column-end: 3;
 	}
 /* --- CONTACT (iPad)--- */
 	.contact-p {
@@ -1277,6 +1286,9 @@ footer a:active {
 	#footer-sidebar1 {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.secondary {
+		margin: 0;
 	}
 	.widget_search {
 		grid-column-start: 2;
@@ -1346,11 +1358,12 @@ footer a:active {
 		max-width: 1200px;
 		margin: 0.5em auto;
 	}
+	.gallery-wrapper {
+		max-width: 1400px;
+		margin: .5em auto 0 auto;
+	}
 	.hurricane-section {
 		display: grid;
-	}
-	.hurricane-painting {
-		max-width: 1000px;
 	}
 	.caption {
 		padding-left: 2em;
@@ -1378,12 +1391,26 @@ footer a:active {
 		max-width: 1200px;
 	}
 /* -- footer (computer) -- */
+	.site-footer {
+		padding: 0;
+	}
 	.secondary {
 		margin: 0 0 0.5em 0;
 		font-size: 1rem;
 	}
 	.secondary h3 {
 		font-size: 1rem;
+	}
+	.widget_nav_menu {
+		grid-column-start: 1;
+	}
+	.widget_nav_menu, #custom_html-2 {
+		grid-row-start: 1;
+		grid-row-end: 3;
+	}
+	#custom_html-3 {
+		grid-row-start: 2;
+		grid-row-end: 3;
 	}
 	#custom_html-3 .copyright{
 		font-size: 0.8rem;
