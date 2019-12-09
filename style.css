@@ -994,6 +994,18 @@ h4, h5, h6 {
 .entry-title {
 	display: none;
 }
+
+/* -- ABOUT (computer) -- */
+	.selfie-wrapper {
+		padding: 0 2em 2em 2em;
+		width: 90%;
+		margin: 0 auto;
+		max-width: 1200px;
+	}
+	.selfie-description {
+		padding: 0 3em 0 0;
+		margin: 0 0 0 auto;
+	}
 h1 {
 	padding: 0.5em;
 	text-align: center;
@@ -1017,14 +1029,15 @@ h1 {
 	margin: 0 0 1em 0;
 }
 .selfie-wrapper {
-		align-items: center;
-		display: grid;
+	align-items: center;
+	display: grid;
+	padding: 0;
 	}
 .selfie {
-	padding: 0 1em;
+	padding: 0;
 }
 .selfie-description {
-		padding: 2em 1em 1em 1em;
+		padding: 2em 0.5em 1em 0.5em;
 		text-indent: 2rem;
 		grid-row: 2;
 	}
