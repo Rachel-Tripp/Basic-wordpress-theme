@@ -1048,7 +1048,7 @@ h1 {
 	font-size: 1.5rem;
 	text-align: center;
 }
-.gallery-p {
+.gallery-p, .gallery-p-sw {
 	padding: 0 1em;
 	text-indent: 2rem;
 	margin: 0 0 1.5em 0;
@@ -1273,12 +1273,15 @@ footer a:active {
 	.gallery-h2 {
 		text-align: left;
 		font-size: 1.75rem;
-		padding: 0 3rem
+		padding: 0 3.5rem
 	}
 	.gallery-p {
-		padding: 0 3em;
+		padding: 0 4em;
 		margin: 0.5em 0;
 		font-size: 1rem;
+	}
+	.gallery-p-sw {
+		padding: 0.25em 3em 0 3em;
 	}
 	.gallery-wrapper {
 		display: grid;
@@ -1438,8 +1441,12 @@ footer a:active {
 		padding: 2em;
 		color: var(--background);
 	}
+	.gallery-p-sw {
+		max-width: 1050px;
+		margin: 0 auto;
+	}
 	.gallery-h2 {
-		max-width: 1200px;
+		max-width: 1050px;
 		margin: 0 auto;
 	}
 	.gallery-wrapper {
