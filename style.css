@@ -1259,7 +1259,7 @@ footer a:active {
 	grid-template-columns: 1.5fr 1fr;
 		align-items: center;
 		font-size: 1rem;
-		padding: 0 1em 2em 1em;
+		padding: 1em 1em 2em 1em;
 	}
 	.selfie-description {
 		padding: 0 2em 0 1em;
@@ -1395,7 +1395,7 @@ footer a:active {
 	}
 	.home-p {
 		max-width: 1200px;
-		margin: 0 auto;
+		margin: 0 auto 0 auto;
 		padding: 3em 8em 3em 8em;
 		color: var(--background);
 	}
@@ -1405,15 +1405,14 @@ footer a:active {
 	.home-wrapper {
 		padding: 22em 0 30em 0;
 		background-image: url("https://racheetah-tripp.org/wp-content/uploads/2019/12/Hurricane-Painting-compressed-scaled-e1575861112823.jpg");
-  height: 900px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  	height: 900px;
+  	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	background-size: cover;
 	}
 /* -- ABOUT (computer) -- */
 	.selfie-wrapper {
-		padding: 0 2em 2em 2em;
+		padding: 1em 2em 2em 2em;
 		width: 90%;
 		margin: 0 auto;
 		max-width: 1200px;
@@ -1441,7 +1440,6 @@ footer a:active {
 		background-image: url("https://racheetah-tripp.org/wp-content/uploads/2019/12/Hurricane-Painting-01-compressed-scaled-e1575860565832.jpg");
   height: 1200px;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 	}
