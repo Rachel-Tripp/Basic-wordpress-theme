@@ -992,21 +992,17 @@ h4, h5, h6 {
 	}
 /*============= ## Body Styles =============*/
 /* ----- HOME ----- */
-.entry-title {
+/* .entry-title {
 	display: none;
+} */
+.home .entry-title {
+	margin: 0;
+	padding: 0;
+	transform: translate(-100000px, -100000px);
 }
-
-/* -- ABOUT (computer) -- */
-	.selfie-wrapper {
-		padding: 0 2em 2em 2em;
-		width: 90%;
-		margin: 0 auto;
-		max-width: 1200px;
-	}
-	.selfie-description {
-		padding: 0 3em 0 0;
-		margin: 0 0 0 auto;
-	}
+.home .entry-header {
+	max-height: 0em;
+}
 h1 {
 	padding: 0.5em;
 	text-align: center;
@@ -1033,6 +1029,8 @@ h1 {
 	align-items: center;
 	display: grid;
 	padding: 0;
+	width: 90%;
+	margin: 0 auto;
 	}
 .selfie {
 	padding: 0;
@@ -1043,6 +1041,9 @@ h1 {
 		grid-row: 2;
 	}
 /* ----- GALLERY ----- */
+.gallery-h1-background h1{
+	display: none;
+}
 .gallery-h2 {
 	padding: 0 1em;
 	font-size: 1.5rem;
@@ -1422,6 +1423,18 @@ footer a:active {
 		margin: 0 0 0 auto;
 	}
 /* -- GALLERY (computer) -- */
+	.page-id-16 .entry-header {
+		max-height: 1em;
+	}
+	.page-id-16 .entry-title {
+		margin: 0;
+		padding: 0;
+		transform: translate(-100000px, -100000px)
+	}
+	.gallery-h1-background h1{
+		display: block;
+		text-align: center;
+	}
 	.gallery-background-img {
 		margin: 0 0 2em 0;
 		padding: 0 0 65em 0;
