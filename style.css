@@ -1062,8 +1062,27 @@ h1 {
 .gallery-wrapper img{
 	padding: 0 0.5em;
 }
+.trigger-div {
+	margin: 0 auto;
+	text-align: center;
+}
+.trigger {
+	font-family: gill-sans-nova;
+	font-size: 1rem;
+	margin: 0 auto 1em auto;
+	text-align: center;
+	padding: 0.5em 4em;
+}
 .caption {
-	padding: 0em 2em 2em 2em;
+	padding: 0;
+	margin: 0;
+	height: 0px;
+	transform: translate(-100000px, -100000px);
+}
+.caption.open{
+	padding: 0em 2em 1em 2em;
+	transform: translate(0, 0);
+	height: auto;
 }
 .caption-body {
 	font-weight: normal;
@@ -1293,8 +1312,9 @@ footer a:active {
 	.wp-image-210 {
 		margin: 0;
 	}
-	.caption {
-		padding: 0 2em 2em 2em;
+	 .Mario-mural-section .caption.open {
+		width: 430px;
+		 margin: 0 auto;
 	}
 	.caption-body {
 		font-size: 1rem;
@@ -1481,8 +1501,15 @@ footer a:active {
 	.hurricane-section {
 		display: grid;
 	}
-	.caption {
-		padding-left: 2em;
+	.caption.open {
+		width: 450px;
+		margin: 0 auto;
+	}
+	.hurricane-section img {
+		padding: 0 0.5em 0.3em 0.5em;
+	}
+	.Mario-mural-section .caption.open {
+		width: 800px;
 		margin: 0 auto;
 	}
 	.caption-body {
