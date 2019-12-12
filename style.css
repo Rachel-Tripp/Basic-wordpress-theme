@@ -860,23 +860,24 @@ object {
 	--h2-size: 2rem;
 	--h3-size: 1.3rem;
 	/*============= colors =============*/
-	--background: #f3e8ce;
+	--background: #ffe0c7;
 	--light-opaque-background: rgb(243, 232, 206, 0.5);
 	--dark-opaque-background: rgb(18, 36, 72, 0.75);
-	--menu-background: #6d280e;
+	--menu-background: #5b1302;
+	--home-menu-background: #122448;
 	--menu-main-background: #122448;
-	--menu-color: #f3e8ce;
-	--hover-menu-color: #6d280e;
+	--menu-color: #ffe0c7;
+	--hover-menu-color: #5b1302;
 	--heading-color: #122448;
 	--body-color: #122448;
 	--link-initial: #f3e8ce;
 	--link-hover: #c89c2d;
 	--link-active: #c89c2d;
-	--h2-hover: #6d280e;
+	--h2-hover: #5b1302;
 	--footer-background: #122448;
 	--footer-color: #f3e8ce;
 	--footer-link-color: #c89c2d;
-	--footer-link-hover-color: #6d280e;
+	--footer-link-hover-color: #5b1302;
 	--footer-link-active-color: #626275;
 }
 /*============= ## Content Styles =============*/
@@ -1388,21 +1389,22 @@ footer a:active {
 	}
 	.main-navigation ul {
 		padding-left: 0em;
-		margin: 0 auto;
+		padding-right: 2vw;
+		margin: 0 0 0 auto;
 	}
 	.nav-menu {
 		background: var(--menu-background);
 		padding: 0 auto;
 		margin: 0;
-		max-width: 1400px;
+		width: 75vw;
 	}
 	.menu-main-nav-container {
 		background: var(--menu-background);
 		padding: 0;
 	}
 	.nav-menu a {
-		padding: 1.5em 0;
-		width: 8em;
+		padding: 1em 0;
+		width: 100%;
 		font-size: 1rem;
 		background: var(--menu-background);
 	}
@@ -1428,7 +1430,17 @@ footer a:active {
   	height: 900px;
   	background-attachment: fixed;
   	background-repeat: no-repeat;
-  	background-size: cover;
+	  background-size: cover;
+	  padding-top: 50vh;
+	}
+	.home .nav-menu {
+		background: var(--home-menu-background);
+	}
+	.home .menu-main-nav-container {
+		background: var(--home-menu-background);
+	}
+	.home .nav-menu a {
+		background: var(--home-menu-background);
 	}
 /* -- ABOUT (computer) -- */
 	.selfie-wrapper {
@@ -1471,6 +1483,7 @@ footer a:active {
 		margin: 15em auto 1em auto;
 		padding: 2em;
 		color: var(--background);
+		margin-top: 50vh;
 	}
 	.gallery-p-sw {
 		max-width: 1200px;
@@ -1559,7 +1572,6 @@ footer a:active {
 }
 @media screen and (min-width:85em) {
 	.nav-menu a {
-		width: 11em;
 		font-size: 1.2rem;
 	}
 }
