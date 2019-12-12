@@ -859,24 +859,24 @@ object {
 	--h1-size: 3rem;
 	--h2-size: 2rem;
 	--h3-size: 1.3rem;
-	/*============= colors =============*/
-	--background: #ffe0c7;
-	--light-opaque-background: rgb(243, 232, 206, 0.5);
-	--dark-opaque-background: rgb(18, 36, 72, 0.75);
+		/*============= colors =============*/
+	--background: #f2eabb;
+	--light-opaque-background: rgb(255, 224, 199, 0.5);
+	--dark-opaque-background: rgb(12, 25, 43, 0.75);
 	--menu-background: #5b1302;
-	--home-menu-background: #122448;
-	--menu-main-background: #122448;
-	--menu-color: #ffe0c7;
+	--home-menu-background: #0c192b;
+	--menu-main-background: #0c192b;
+	--menu-color: #f2eabb;
 	--hover-menu-color: #5b1302;
-	--heading-color: #122448;
-	--body-color: #122448;
-	--link-initial: #f3e8ce;
-	--link-hover: #c89c2d;
-	--link-active: #c89c2d;
+	--heading-color: #0c192b;
+	--body-color: #0c192b;
+	--link-initial: #f2eabb;
+	--link-hover: #efae3c;
+	--link-active: #efae3c;
 	--h2-hover: #5b1302;
-	--footer-background: #122448;
-	--footer-color: #f3e8ce;
-	--footer-link-color: #c89c2d;
+	--footer-background: #0c192b;
+	--footer-color: #f2eabb;
+	--footer-link-color: #efae3c;
 	--footer-link-hover-color: #5b1302;
 	--footer-link-active-color: #626275;
 }
@@ -1389,7 +1389,6 @@ footer a:active {
 	}
 	.main-navigation ul {
 		padding-left: 0em;
-		padding-right: 2vw;
 		margin: 0 0 0 auto;
 	}
 	.nav-menu {
@@ -1431,7 +1430,7 @@ footer a:active {
   	background-attachment: fixed;
   	background-repeat: no-repeat;
 	  background-size: cover;
-	  padding-top: 50vh;
+	  padding-top: 55vh;
 	}
 	.home .nav-menu {
 		background: var(--home-menu-background);
@@ -1441,6 +1440,9 @@ footer a:active {
 	}
 	.home .nav-menu a {
 		background: var(--home-menu-background);
+	}
+	.home .nav-menu a:hover {
+		background: var(--background);
 	}
 /* -- ABOUT (computer) -- */
 	.selfie-wrapper {
@@ -1483,7 +1485,7 @@ footer a:active {
 		margin: 15em auto 1em auto;
 		padding: 2em;
 		color: var(--background);
-		margin-top: 50vh;
+		margin-top: 30vh;
 	}
 	.gallery-p-sw {
 		max-width: 1200px;
@@ -1572,6 +1574,6 @@ footer a:active {
 }
 @media screen and (min-width:85em) {
 	.nav-menu a {
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 }
