@@ -475,9 +475,9 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 :root {
-	--link-color: #1b57af;
-	--visited-link-color: #f4c036;
-	--hover-link-color: #c89c2d;
+	--link-color: #f2eabb;
+	--visited-link-color: #f2eabb;
+	--hover-link-color: #f2eabb;
 }
 
 a {
@@ -862,7 +862,8 @@ object {
 		/*============= colors =============*/
 	--background: #f2eabb;
 	--light-opaque-background: rgb(255, 224, 199, 0.5);
-	--dark-opaque-background: rgb(12, 25, 43, 0.75);
+	--dark-opaque-background: rgb(12, 25, 43, 0.94);
+	--light-color-1: #858C98;
 	--menu-background: #5b1302;
 	--home-menu-background: #0c192b;
 	--menu-main-background: #0c192b;
@@ -871,12 +872,12 @@ object {
 	--heading-color: #0c192b;
 	--body-color: #0c192b;
 	--link-initial: #f2eabb;
-	--link-hover: #efae3c;
-	--link-active: #efae3c;
+	--link-hover: #f2eabb;
+	--link-active: #f2eabb;
 	--h2-hover: #5b1302;
 	--footer-background: #0c192b;
-	--footer-color: #f2eabb;
-	--footer-link-color: #efae3c;
+	--footer-color: #858C98;
+	--footer-link-color: #f2eabb;
 	--footer-link-hover-color: #5b1302;
 	--footer-link-active-color: #626275;
 }
@@ -950,7 +951,6 @@ h4, h5, h6 {
 /*============= ## Nav Menu Styles =============*/
 .menu-logo-here {
 	background:none;
-	color: var(--menu-color);
 	position: absolute;
 	top: 0.54em; left: 20%;
 	font-family: source-serif-pro, serif;
@@ -962,11 +962,11 @@ h4, h5, h6 {
 }
 .menu-logo-here a {
 	background:none;
-	color: var(--menu-color);
+	color: var(--light-color-1);
 }
 .menu-logo-here a:hover {
 	background:none;
-	color: var(--menu-color);
+	color: var(--light-color-1);
 }
 .menu-logo-here a:active {
 	background:none;
@@ -1443,13 +1443,13 @@ footer a:active {
 		left: 4%;
 		font-size: 1.1rem;
 		letter-spacing: 0.2rem;
-		color: var(--menu-color);
+		color: var(--light-color-1);
 	}
 	.home .menu-logo-here a, .menu-logo-here a {
-		color: var(--menu-color);
+		color: var(--light-color-1);
 	}
 	.menu-logo-here a:hover {
-		color: var(--menu-color);
+		color: var(--light-color-1);
 	}
 	.menu-logo-here a:active {
 	background:none;
@@ -1494,7 +1494,7 @@ footer a:active {
 		max-width: 1200px;
 		margin: 0 auto 0 auto;
 		padding: 3em 8em 3em 8em;
-		color: var(--background);
+		color: var(--light-color-1);
 	}
 	.home-page-image {
 		display: none;
@@ -1591,6 +1591,9 @@ footer a:active {
 	}
 	.hurricane-section {
 		display: grid;
+	}
+	.image-click:active {
+		filter: blur(5px);
 	}
 	.caption.open {
 		width: 450px;
