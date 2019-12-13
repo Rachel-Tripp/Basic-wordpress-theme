@@ -1448,7 +1448,14 @@ footer a:active {
 	.home .menu-logo-here a, .menu-logo-here a {
 		color: var(--menu-color);
 	}
+	.menu-logo-here a:hover {
+		color: var(--menu-color);
+	}
 	.menu-logo-here a:active {
+	background:none;
+	color: var(--menu-main-background);
+	}
+	.home .menu-logo-here a:active {
 	background:none;
 	color: var(--hover-menu-color);
 		transition: 0.5s;
