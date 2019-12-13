@@ -949,8 +949,28 @@ h4, h5, h6 {
 }
 /*============= ## Nav Menu Styles =============*/
 .menu-logo-here {
-background: url("https://racheetah-tripp.org/wp-content/uploads/2019/12/Test-logo.png");
-  background-repeat: no-repeat;
+	background:none;
+	color: var(--menu-color);
+	position: absolute;
+	top: 0.54em; left: 20%;
+	font-family: source-serif-pro, serif;
+	font-weight: 900;
+	font-style: normal;
+	background: none;
+	letter-spacing: 0.15rem;
+	word-spacing: 0.5rem;
+}
+.menu-logo-here a {
+	background:none;
+	color: var(--menu-color);
+}
+.menu-logo-here a:hover {
+	background:none;
+	color: var(--menu-color);
+}
+.menu-logo-here a:active {
+	background:none;
+	color: var(--hover-menu-color);
 }
 .menu-toggle {
 	margin: 0 0 0 auto;
@@ -1247,6 +1267,29 @@ footer a:active {
         font-size: 1rem;
     }
 /* ----- Menu ----- */
+	.menu-logo-here {
+		top: 5em;
+		left: 72%;
+		font-family: source-serif-pro, serif;
+		font-weight: 900;
+		font-style: normal;
+		letter-spacing: .1rem;
+		word-spacing: 0.6rem;
+		color: var(--menu-main-background);
+	}
+	.home .menu-logo-here {
+		top: 7.3em;
+		left: 60%;
+		font-family: source-serif-pro, serif;
+		font-weight: 900;
+		font-style: normal;
+		letter-spacing: 0.2rem;
+		word-spacing: 0.6rem;
+		color: var(--menu-main-background);
+	}
+	.home .menu-logo-here a, .menu-logo-here a{
+		color: var(--menu-main-background);
+	}
 	.nav-menu {
 		background: var(--menu-background);
 		padding: 0;
@@ -1390,6 +1433,16 @@ footer a:active {
 	.entry-content{
 		padding: 0;
 		margin: 0;
+	}
+	.home .menu-logo-here, .menu-logo-here {
+		top: 0.9em;
+		left: 4%;
+		font-size: 1.1rem;
+		letter-spacing: 0.2rem;
+		color: var(--menu-color);
+	}
+	.home .menu-logo-here a, .menu-logo-here a {
+		color: var(--menu-color);
 	}
 	.main-navigation ul {
 		padding-left: 0em;
@@ -1579,5 +1632,8 @@ footer a:active {
 @media screen and (min-width:85em) {
 	.nav-menu a {
 		font-size: 1rem;
+	}
+	.home .menu-logo-here, .menu-logo-here {
+		left: 6%;
 	}
 }
