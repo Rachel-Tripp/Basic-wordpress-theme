@@ -1277,17 +1277,7 @@ footer a:active {
 		word-spacing: 0.6rem;
 		color: var(--menu-main-background);
 	}
-	.home .menu-logo-here {
-		top: 7.3em;
-		left: 60%;
-		font-family: source-serif-pro, serif;
-		font-weight: 900;
-		font-style: normal;
-		letter-spacing: 0.2rem;
-		word-spacing: 0.6rem;
-		color: var(--menu-main-background);
-	}
-	.home .menu-logo-here a, .menu-logo-here a{
+	.menu-logo-here a{
 		color: var(--menu-main-background);
 	}
 	.nav-menu {
