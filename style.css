@@ -1010,10 +1010,12 @@ h4, h5, h6 {
 	.nav-menu a:hover, a:focus {
 	background: var(--background);
 	color: var(--hover-menu-color);
+		transition: 0.5s;
 }
 	.nav-menu a:active {
 		box-shadow: none;
-		color: var(--menu-color)
+		color: var(--menu-main-background);
+		transition: 0.5s;
 	}
 /*============= ## Body Styles =============*/
 /* ----- HOME ----- */
@@ -1267,7 +1269,7 @@ footer a:active {
         font-size: 1rem;
     }
 /* ----- Menu ----- */
-	.menu-logo-here {
+	.menu-logo-here, .home .menu-logo-here {
 		top: 5em;
 		left: 72%;
 		font-family: source-serif-pro, serif;
@@ -1280,6 +1282,15 @@ footer a:active {
 	.menu-logo-here a{
 		color: var(--menu-main-background);
 	}
+	.menu-logo-here a:hover {
+		color: var(--menu-main-background);
+		transition: 0.5s;
+	}
+	.menu-logo-here a:active {
+	background:none;
+	color: var(--hover-menu-color);
+		transition: 0.5s;
+}
 	.nav-menu {
 		background: var(--menu-background);
 		padding: 0;
@@ -1305,6 +1316,9 @@ footer a:active {
 	.menu-item-82 {
 		grid-column: 4;
 	}
+	h1 {
+	padding: 1em 0.5em 0.5em 0.5em;
+}
 /* ----- HOME (iPad) ----- */
 	.home-p {
 		font-size: 1rem;
@@ -1434,6 +1448,11 @@ footer a:active {
 	.home .menu-logo-here a, .menu-logo-here a {
 		color: var(--menu-color);
 	}
+	.menu-logo-here a:active {
+	background:none;
+	color: var(--hover-menu-color);
+		transition: 0.5s;
+}
 	.main-navigation ul {
 		padding-left: 0em;
 		margin: 0 0 0 auto;
@@ -1454,6 +1473,9 @@ footer a:active {
 		font-size: 1rem;
 		background: var(--menu-background);
 	}
+	h1 {
+	padding: 0.5em;
+}
 /* -- HOME (computer) -- */
 	.hentry {
 		margin: 0;
