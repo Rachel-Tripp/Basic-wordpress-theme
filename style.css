@@ -864,6 +864,7 @@ object {
 	--light-opaque-background: rgb(255, 224, 199, 0.5);
 	--dark-opaque-background: rgb(12, 25, 43, 0.94);
 	--light-color-1: #858C98;
+	--light-color-2: #ffc294;
 	--menu-background: #5b1302;
 	--home-menu-background: #0c192b;
 	--menu-main-background: #0c192b;
@@ -1445,10 +1446,19 @@ footer a:active {
 		letter-spacing: 0.2rem;
 		color: var(--light-color-1);
 	}
+	.menu-logo-here {
+		color: var(--light-color-2);
+	}
 	.home .menu-logo-here a, .menu-logo-here a {
 		color: var(--light-color-1);
 	}
+	.menu-logo-here a {
+		color: var(--light-color-2);
+	}
 	.menu-logo-here a:hover {
+		color: var(--light-color-2);
+	}
+	.home .menu-logo-here a:hover {
 		color: var(--light-color-1);
 	}
 	.menu-logo-here a:active {
