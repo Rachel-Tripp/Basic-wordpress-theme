@@ -862,7 +862,8 @@ object {
 		/*============= colors =============*/
 	--background: #f2eabb;
 	--light-opaque-background: rgb(255, 224, 199, 0.5);
-	--dark-opaque-background: rgb(12, 25, 43, 0.94);
+	--home-p-background: rgb(12, 25, 43, 0.94);
+	--gallery-p-background: rgb(12, 25, 43, 0.75);
 	--light-color-1: #858C98;
 	--light-color-2: #ffc294;
 	--menu-background: #5b1302;
@@ -1498,13 +1499,14 @@ footer a:active {
 		margin: 0;
 	}
 	.home-p-background {
-		background: var(--dark-opaque-background);
+		background: var(--home-p-background);
 	}
 	.home-p {
 		max-width: 1200px;
 		margin: 0 auto 0 auto;
-		padding: 3em 8em 3em 8em;
+		padding: 2em 4em 2em 4em;
 		color: var(--light-color-1);
+		font-size: 1.2rem;
 	}
 	.home-page-image {
 		display: none;
@@ -1564,7 +1566,7 @@ footer a:active {
   background-size: cover;
 	}
 	.gallery-p-background {
-		background: var(--dark-opaque-background);
+		background: var(--gallery-p-background);
 	}
 	.gallery-p {
 		max-width: 1050px;
@@ -1572,6 +1574,7 @@ footer a:active {
 		padding: 2em;
 		color: var(--background);
 		margin-top: 30vh;
+		font-size: 1.2rem;
 	}
 	.gallery-p-sw {
 		max-width: 1200px;
