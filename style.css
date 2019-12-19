@@ -861,7 +861,7 @@ object {
 	--h3-size: 1.3rem;
 		/*============= colors =============*/
 	--background: #f2eabb;
-	--light-opaque-background: rgb(255, 224, 199, 0.5);
+	--light-opaque-background: rgb(242,234,187, 0.4);
 	--home-p-background: rgb(12, 25, 43, 0.94);
 	--gallery-p-background: rgb(12, 25, 43, 0.75);
 	--light-color-1: #9ba4b2;
