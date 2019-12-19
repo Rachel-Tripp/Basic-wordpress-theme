@@ -864,7 +864,7 @@ object {
 	--light-opaque-background: rgb(255, 224, 199, 0.5);
 	--home-p-background: rgb(12, 25, 43, 0.94);
 	--gallery-p-background: rgb(12, 25, 43, 0.75);
-	--light-color-1: #858C98;
+	--light-color-1: #9ba4b2;
 	--light-color-2: #ffc294;
 	--menu-background: #5b1302;
 	--home-menu-background: #0c192b;
@@ -878,10 +878,10 @@ object {
 	--link-active: #f2eabb;
 	--h2-hover: #5b1302;
 	--footer-background: #0c192b;
-	--footer-color: #858C98;
+	--footer-color: #9ba4b2;
 	--footer-link-color: #f2eabb;
 	--footer-link-hover-color: #5b1302;
-	--footer-link-active-color: #626275;
+	--footer-link-active-color: #9ba4b2;
 }
 /*============= ## Content Styles =============*/
 html, body {
