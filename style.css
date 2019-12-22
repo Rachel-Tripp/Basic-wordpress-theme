@@ -1045,10 +1045,38 @@ h1 {
 	padding: 0;
 	margin: 0;
 }
-.home-p {
+.home-p, .search-results .entry-summary {
 	padding: 0.5em 1em 1em 1em;
 	margin: 0;
 	text-indent: 2rem;
+}
+.search-results .page-title {
+	font-size: 2.2rem;
+	padding: 0.5em 0.1em;
+	margin: 0 0 0.25em 0;
+}
+.search-results .page-title span {
+	font-size: 3rem;
+	font-family: gill-sans-nova, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.search-results .page-title span::before {
+  content: "\A";
+	white-space: pre;
+}
+.search-results .entry-title {
+	text-align: center;
+}
+.search-results .entry-title a {
+	color: var(--hover-menu-color);
+}
+.search-results .entry-title a:hover, .search-results .entry-title a:focus {
+	color: var(--body-color);
+	transition: 1s;
+}
+.search-results .entry-title a:active {
+	color: var(--hover-menu-color);
 }
 /* ----- ABOUT ----- */
 .selfie-description {
@@ -1326,6 +1354,14 @@ footer a:active {
 		font-size: 1rem;
 		padding: 1em 4em 1em 4em;
 	}
+	.search-results .entry-summary {
+		padding: 0.5em 4em 1em 4em;
+	}
+	.search-results .page-title {
+		font-size: 2.2rem;
+		padding: 0em 0.1em 0.5em 0.1em;
+		margin: 0 0 1em 0;
+	}
 /* ----- ABOUT (iPad) ----- */
 	.selfie-wrapper {
 	display: grid;
@@ -1532,6 +1568,14 @@ footer a:active {
 	.home .nav-menu a:hover {
 		background: var(--background);
 	}
+	.search-results .entry-summary {
+		padding: 0.5em 4em 1em 4em;
+	}
+	.search-results .page-title {
+		font-size: 2.2rem;
+		padding: 0.5em 0.1em 0.5em 0.1em;
+		margin: 0 0 1em 0;
+	}
 /* -- ABOUT (computer) -- */
 	.selfie-wrapper {
 		padding: 1em 2em 2em 2em;
@@ -1670,5 +1714,8 @@ footer a:active {
 	}
 	.home .menu-logo-here, .menu-logo-here {
 		left: 6%;
+	}
+	.search-results .entry-summary {
+		max-width: 1200px;
 	}
 }
