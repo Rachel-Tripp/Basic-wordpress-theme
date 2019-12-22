@@ -1717,5 +1717,6 @@ footer a:active {
 	}
 	.search-results .entry-summary {
 		max-width: 1200px;
+		margin: 0 auto;
 	}
 }
